@@ -1,0 +1,10 @@
+{
+  "name": "angular-suspense",
+  "version": 2,
+  "alias": ["angular-suspense"],
+  "public": false,
+  "github": {
+    "enabled": true,
+    "silent": true
+  }
+}

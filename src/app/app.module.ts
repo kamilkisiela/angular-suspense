@@ -37,7 +37,7 @@ import { SharedModule } from './shared/shared.module';
       {
         path: '',
         pathMatch: 'full',
-        redirectTo: '/repos',
+        redirectTo: '/fake',
       },
     ]),
     SuspenseModule,
