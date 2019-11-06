@@ -8,11 +8,11 @@ React-like Suspense API for Angular applications.
 
 Using Yan:
 
-  yarn add angular-suspense
+    yarn add angular-suspense
 
 Using NPM:
 
-  npm install angular-suspense
+    npm install angular-suspense
 
 ## Setup
 
