@@ -32,7 +32,7 @@ export class AppModule {}
 ## Usage
 
 ```html
-<error-boundry>
+<error-boundary>
   <h2 fallback>Error!</h2>
 
   <suspense>
@@ -40,7 +40,7 @@ export class AppModule {}
     
     <app-data></app-data>
   </suspense>
-</error-boundry>
+</error-boundary>
 ```
 
 ## Suspense API

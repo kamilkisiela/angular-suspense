@@ -4,12 +4,12 @@ import { delay } from 'rxjs/operators';
 import { Suspense } from 'angular-suspense';
 
 @Component({
-  selector: 'app-data',
+  selector: 'mock-api',
   template: `
     <h2>{{ text | async }}</h2>
   `,
 })
-export class DataComponent implements OnInit {
+export class MockApiComponent implements OnInit {
   @Input() time: number;
   @Input() title: string;
   @Optional() @Input() throw?: boolean;
@@ -28,3 +28,22 @@ export class DataComponent implements OnInit {
     }
   }
 }
+
+@Component({
+  selector: 'fake',
+  template: `
+    Mocked
+    <mock-api title="Ready #1" time="2000"></mock-api>
+    <!--<suspense-list>-->
+      <suspense>
+        <h2 fallback>Loading #2</h2>
+        <mock-api title="Ready #2" time="6000"></mock-api>
+      </suspense>
+      <suspense>
+        <h2 fallback>Loading #3</h2>
+        <mock-api title="Ready #3" time="4000"></mock-api>
+      </suspense>
+    <!--</suspense-list>-->
+  `,
+})
+export class FakeComponent {}

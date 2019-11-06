@@ -2,11 +2,11 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { SuspenseComponent } from './suspense.component';
-import { ErrorBoundryComponent } from './error-boundry.component';
+import { ErrorBoundaryComponent } from './error-boundary.component';
 
 @NgModule({
-  declarations: [SuspenseComponent, ErrorBoundryComponent],
+  declarations: [SuspenseComponent, ErrorBoundaryComponent],
   imports: [CommonModule],
-  exports: [SuspenseComponent, ErrorBoundryComponent],
+  exports: [SuspenseComponent, ErrorBoundaryComponent],
 })
 export class SuspenseModule {}

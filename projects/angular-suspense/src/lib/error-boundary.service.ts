@@ -3,7 +3,7 @@ import { Subject } from 'rxjs';
 import { take } from 'rxjs/operators';
 
 @Injectable()
-export class ErrorBoundry {
+export class ErrorBoundary {
   onError = new Subject<any>();
   error = this.onError.pipe(take(1));
 

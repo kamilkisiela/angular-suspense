@@ -1,5 +1,5 @@
-import { Component } from '@angular/core';
-import { Suspense } from './suspense.service';
+import { Component, Optional, Input, OnInit } from '@angular/core';
+import { Suspense, SuspenseConfig } from './suspense.service';
 
 @Component({
   selector: 'suspense',
@@ -12,6 +12,14 @@ import { Suspense } from './suspense.service';
   `,
   providers: [Suspense],
 })
-export class SuspenseComponent {
+export class SuspenseComponent implements OnInit {
+  @Input() busyMinDurationMs?: SuspenseConfig['busyMinDurationMs'];
+
   constructor(public suspense: Suspense) {}
+
+  ngOnInit() {
+    this.suspense.configure({
+      busyMinDurationMs: this.busyMinDurationMs,
+    });
+  }
 }
