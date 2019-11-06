@@ -56,9 +56,6 @@ export class Suspense {
         }
       }),
       distinctUntilChanged(),
-      tap(isLoading => {
-        console.log('isLoading', isLoading);
-      }),
     );
 
     this.ready = this.loading.pipe(
@@ -66,9 +63,6 @@ export class Suspense {
       map(loading => !loading),
       distinctUntilChanged(),
       startWith(true),
-      tap(isReady => {
-        console.log('isReady', isReady);
-      }),
     );
   }
 
