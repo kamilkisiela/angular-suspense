@@ -1,7 +1,7 @@
 {
   "name": "angular-suspense",
   "description": "React-like Suspense API for Angular (Suspense + ErrorBoundary)",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "author": {
     "name": "Kamil Kisiela",
     "email": "kamil.kisiela@gmail.com",

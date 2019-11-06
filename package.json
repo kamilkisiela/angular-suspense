@@ -11,6 +11,7 @@
     "build:app": "ng build --prod",
     "lint": "ng lint",
     "e2e": "ng e2e",
+    "release": "yarn build && npm publish dist/angular-suspense",
     "now-build": "yarn build && yarn build:app && rm -rf dist/angular-suspense",
     "postinstall": "ngcc --properties es2015 browser module main --first-only --create-ivy-entry-points"
   },
