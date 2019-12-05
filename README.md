@@ -4,6 +4,10 @@ React-like Suspense API for Angular applications.
 
 > Very very very experimental
 
+## Example
+
+https://stackblitz.com/edit/angular-suspense
+
 ## Install
 
 Using Yan:
